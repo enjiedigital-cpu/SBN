@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahabat Bisnis Nusantara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fefce8; /* yellow-50 */
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, #fde68a 0%, #fefce8 100%); /* amber-200 to yellow-50 */
+        }
+        /* Tombol utama di hero section & footer */
+        .btn-primary {
+            @apply bg-green-500 text-white px-8 py-3 rounded-full hover:bg-red-600 transition-all duration-300 transform hover:scale-105 shadow-lg;
+        }
+        /* Menghapus .btn-secondary untuk menerapkan gaya langsung ke elemen */
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-amber-600">Sahabat Bisnis Nusantara</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#kelas-populer" class="text-slate-600 hover:text-amber-500">Kelas Populer</a>
+                <a href="#semua-kelas" class="text-slate-600 hover:text-amber-500">Semua Kelas</a>
+                <a href="#kategori" class="text-slate-600 hover:text-amber-500">Kategori</a>
+            </div>
+            <!-- PERBAIKAN FINAL: Link tombol Hubungi Kami diubah ke WhatsApp -->
+            <a href="https://wa.me/6285157088268" target="_blank" class="hidden md:block bg-slate-800 text-white px-5 py-2 rounded-full hover:bg-slate-700 transition-colors">
+                Hubungi Kami
+            </a>
+            <button class="md:hidden text-slate-700">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-gradient pt-20 pb-28">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-slate-800 leading-tight">
+                    Buka Potensi Bisnis Anda Bersama Kami
+                </h1>
+                <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">
+                    Dapatkan bimbingan privat dari para ahli untuk menguasai skill digital dan melesatkan bisnis Anda ke level selanjutnya.
+                </p>
+                <div class="mt-10">
+                    <a href="#kelas-populer" class="btn-primary text-lg">
+                        Mulai Belajar Sekarang
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kelas Privat Populer Section -->
+        <section id="kelas-populer" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-slate-800 text-center">Kelas Privat Populer</h2>
+                <p class="text-center text-slate-500 mt-2">Pilihan kelas yang paling diminati untuk memulai.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                    <!-- Course Card 1 -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="https://placehold.co/600x400/ef4444/ffffff?text=TikTok+Shop" alt="Kelas TikTok Shop" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col">
+                            <h3 class="text-xl font-semibold text-slate-800">Kelas TikTok Shop</h3>
+                            <p class="text-slate-500 mt-2 flex-grow">Jualan laris manis di platform paling viral.</p>
+                            <div class="mt-4 text-2xl font-bold text-amber-500">
+                                Rp 99.000
+                            </div>
+                             <!-- PERBAIKAN FINAL: Gaya & Link diterapkan langsung -->
+                             <a href="https://sahabat-digital.myr.id/plink/produk-digital-31297" class="block w-full text-center mt-4 bg-slate-900 text-white px-6 py-2 rounded-full hover:bg-amber-400 active:bg-amber-500 transition-all duration-300">Daftar Kelas</a>
+                        </div>
+                    </div>
+                    <!-- Course Card 2 -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Facebook+Ads" alt="Kelas Facebook Ads" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col">
+                            <h3 class="text-xl font-semibold text-slate-800">Kelas Facebook Ads</h3>
+                            <p class="text-slate-500 mt-2 flex-grow">Iklan tertarget untuk hasil maksimal.</p>
+                           <div class="mt-4 text-2xl font-bold text-amber-500">
+                                Rp 99.000
+                            </div>
+                             <!-- PERBAIKAN FINAL: Gaya & Link diterapkan langsung -->
+                             <a href="https://sahabat-digital.myr.id/plink/produk-digital-31297" class="block w-full text-center mt-4 bg-slate-900 text-white px-6 py-2 rounded-full hover:bg-amber-400 active:bg-amber-500 transition-all duration-300">Daftar Kelas</a>
+                        </div>
+                    </div>
+                    <!-- Course Card 3 -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="https://placehold.co/600x400/14b8a6/ffffff?text=Website+Instan" alt="Kelas Website Instan" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col">
+                            <h3 class="text-xl font-semibold text-slate-800">Kelas Website Instan</h3>
+                            <p class="text-slate-500 mt-2 flex-grow">Punya website profesional tanpa koding.</p>
+                            <div class="mt-4 text-2xl font-bold text-amber-500">
+                                Rp 99.000
+                            </div>
+                             <!-- PERBAIKAN FINAL: Gaya & Link diterapkan langsung -->
+                             <a href="https://sahabat-digital.myr.id/plink/produk-digital-31297" class="block w-full text-center mt-4 bg-slate-900 text-white px-6 py-2 rounded-full hover:bg-amber-400 active:bg-amber-500 transition-all duration-300">Daftar Kelas</a>
+                        </div>
+                    </div>
+                    <!-- Course Card 4 -->
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
+                        <img src="https://placehold.co/600x400/8b5cf6/ffffff?text=AI+&+Editing" alt="Kelas AI dan Editing" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col">
+                            <h3 class="text-xl font-semibold text-slate-800">Kelas AI & Editing</h3>
+                            <p class="text-slate-500 mt-2 flex-grow">Buat konten menarik dengan bantuan AI.</p>
+                            <div class="mt-4 text-2xl font-bold text-amber-500">
+                                Rp 99.000
+                            </div>
+                            <!-- PERBAIKAN FINAL: Gaya & Link diterapkan langsung -->
+                            <a href="https://sahabat-digital.myr.id/plink/produk-digital-31297" class="block w-full text-center mt-4 bg-slate-900 text-white px-6 py-2 rounded-full hover:bg-amber-400 active:bg-amber-500 transition-all duration-300">Daftar Kelas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                     <a href="#semua-kelas" class="btn-primary text-lg">
+                        Lihat Semua Pilihan Kelas
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Semua Kelas Section -->
+        <section id="semua-kelas" class="py-20 bg-yellow-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-slate-800 text-center">Semua Pilihan Kelas Privat</h2>
+                <p class="text-center text-slate-500 mt-2 max-w-2xl mx-auto">Setiap kelas adalah sesi privat 1-on-1 selama 2 jam, fokus pada kebutuhan Anda. Harga flat Rp 99.000 per pertemuan.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                    <!-- PERUBAHAN: Latar belakang warna-warni -->
+                    <div class="bg-rose-100 p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow flex flex-col">
+                        <h3 class="text-xl font-semibold text-slate-800">Kursus TikTok Ads</h3>
+                        <p class="text-slate-500 mt-2 flex-grow">Strategi iklan di TikTok untuk menjangkau jutaan audiens.</p>
+                        <a href="https://sahabat-digital.myr.id/plink/produk-digital-31297" class="block w-full text-center mt-4 bg-slate-900 text-white px-6 py-2 rounded-full hover:bg-amber-400 active:bg-amber-500 transition-all duration-300">Ambil Kelas Ini</a>
+                    </div>
+                    <div class="bg-sky-100 p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow flex flex-col">
+                        <h3 class="text-xl font-semibold text-slate-800">Kursus Google Ads</h3>
+                        <p class="text-slate-500 mt-2 flex-grow">Tampil di halaman pertama Google dan dapatkan pelanggan.</p>
+                        <a href="https://sahabat-digital.myr.id/plink/produk-digital-31297" class="block w-full text-center mt-4 bg-slate-900 text-white px-6 py-2 rounded-full hover:bg-amber-400 active:bg-amber-500 transition-all duration-300">Ambil Kelas Ini</a>
+                    </div>
+                    <div class="bg-teal-100 p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow flex flex-col">
+                        <h3 class="text-xl font-semibold text-slate-800">Kursus Website Elementor</h3>
+                        <p class="text-slate-500 mt-2 flex-grow">Desain website canggih dengan drag-and-drop.</p>
+                        <a href="https://sahabat-digital.myr.id/plink/produk-digital-31297" class="block w-full text-center mt-4 bg-slate-900 text-white px-6 py-2 rounded-full hover:bg-amber-400 active:bg-amber-500 transition-all duration-300">Ambil Kelas Ini</a>
+                    </div>
+                    <div class="bg-violet-100 p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow flex flex-col">
+                        <h3 class="text-xl font-semibold text-slate-800">Kursus Bikin Aplikasi</h3>
+                        <p class="text-slate-500 mt-2 flex-grow">Wujudkan ide aplikasi Anda menjadi nyata tanpa koding.</p>
+                        <a href="https://sahabat-digital.myr.id/plink/produk-digital-31297" class="block w-full text-center mt-4 bg-slate-900 text-white px-6 py-2 rounded-full hover:bg-amber-400 active:bg-amber-500 transition-all duration-300">Ambil Kelas Ini</a>
+                    </div>
+                    <div class="bg-orange-100 p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow flex flex-col">
+                        <h3 class="text-xl font-semibold text-slate-800">Kursus Editing Canva</h3>
+                        <p class="text-slate-500 mt-2 flex-grow">Desain grafis profesional untuk semua kebutuhan bisnis.</p>
+                        <a href="https://sahabat-digital.myr.id/plink/produk-digital-31297" class="block w-full text-center mt-4 bg-slate-900 text-white px-6 py-2 rounded-full hover:bg-amber-400 active:bg-amber-500 transition-all duration-300">Ambil Kelas Ini</a>
+                    </div>
+                    <div class="bg-lime-100 p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow flex flex-col">
+                        <h3 class="text-xl font-semibold text-slate-800">Kursus Editing CapCut</h3>
+                        <p class="text-slate-500 mt-2 flex-grow">Edit video pendek yang viral dan menarik untuk media sosial.</p>
+                        <a href="https://sahabat-digital.myr.id/plink/produk-digital-31297" class="block w-full text-center mt-4 bg-slate-900 text-white px-6 py-2 rounded-full hover:bg-amber-400 active:bg-amber-500 transition-all duration-300">Ambil Kelas Ini</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Kategori Populer Section -->
+        <section id="kategori" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-slate-800 text-center">Kategori Populer</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mt-12 text-center">
+                    <!-- Category Item -->
+                    <div class="bg-yellow-50 p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow">
+                        <h3 class="font-semibold text-slate-700">Meta Ads untuk Kampanye Politik</h3>
+                    </div>
+                    <div class="bg-yellow-50 p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow">
+                        <h3 class="font-semibold text-slate-700">Bikin Aplikasi dalam 5 Menit</h3>
+                    </div>
+                    <div class="bg-yellow-50 p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow">
+                        <h3 class="font-semibold text-slate-700">Bisnis Kemitraan Bimbel</h3>
+                    </div>
+                    <div class="bg-yellow-50 p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow">
+                        <h3 class="font-semibold text-slate-700">Menjual Produk Digital</h3>
+                    </div>
+                    <div class="bg-yellow-50 p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow">
+                        <h3 class="font-semibold text-slate-700">Belajar VEO</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-300">
+        <div class="container mx-auto px-6 py-12">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold text-white">Sahabat Bisnis Nusantara</h3>
+                <p class="mt-4 text-slate-400 max-w-md mx-auto">Membantu Anda bertumbuh di era digital melalui bimbingan privat yang praktis dan terjangkau.</p>
+                <div class="mt-6">
+                    <a href="https://sahabat-digital.myr.id/plink/produk-digital-31297" class="btn-primary">
+                        Daftar Kelas Sekarang
+                    </a>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-slate-700 pt-8 text-center text-slate-500">
+                <p>&copy; 2024 Sahabat Bisnis Nusantara. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
